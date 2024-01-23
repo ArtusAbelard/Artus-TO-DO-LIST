@@ -36,15 +36,17 @@ function addtodo() {
     let valider
 
     btndiv.addEventListener('click', ()=>{
-        tododiv.style.background= "#00ff04"
+        // tododiv.style.background= "#00ff04"
+        tododiv.classList.toggle("letoggle")
+        console.log(tododiv.classList);
         valider = "valider"
         tododiv.style.display="block"
-        btndiv.addEventListener("click",()=>{
-            tododiv.style.display=""
-            btndiv.addEventListener('click', ()=>{
-                tododiv.style.background= "#00ff04"})
-                tododiv.style.display="block"
-        })
+        // btndiv.addEventListener("click",()=>{
+        //     tododiv.style.display=""
+            // btndiv.addEventListener('click', ()=>{
+            //     tododiv.style.background= "#00ff04"})
+            //     tododiv.style.display="block"
+        // })
      
     })
     
