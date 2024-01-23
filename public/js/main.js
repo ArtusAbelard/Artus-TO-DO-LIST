@@ -59,7 +59,7 @@ function addtodo() {
     })
 
     filtres[0].addEventListener('click', ()=>{
-        if (valider=="valider") {
+        if (tododiv.classList=="tododiv letoggle") {
             tododiv.style.display = "block"
         }else{
             tododiv.style.display = "block"
@@ -69,7 +69,7 @@ function addtodo() {
     })
 
     filtres[1].addEventListener('click', ()=>{
-        if (valider=="valider") {
+        if (tododiv.classList=="tododiv letoggle") {
             tododiv.style.display = "none"
         }else{
             tododiv.style.display = "block"
@@ -77,15 +77,25 @@ function addtodo() {
         }
 
     })
+    "tododiv letoggle"
 
     filtres[2].addEventListener("click", ()=>{
-        if (valider=="valider") {
+        if (tododiv.classList=="tododiv letoggle") {
             tododiv.style.display = "block"
         }else{
             tododiv.style.display = "none"
         }
 
     })
+
+    // filtres[2].addEventListener("click", ()=>{
+    //     if (valider=="valider") {
+    //         tododiv.style.display = "block"
+    //     }else{
+    //         tododiv.style.display = "none"
+    //     }
+
+    // })
     body.appendChild(tododiv)
     inputtodo.value=""
 }
